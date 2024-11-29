@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout Bootstrap 5</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .block {
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="d-block d-sm-none">
+            <div class="row">
+                <div class="col-12 bg-success block">header</div>
+                <div class="col-12 bg-danger block">banner mobile</div>
+                <div class="col-12 bg-info block">banner interno</div>
+                <div class="col-12 bg-secondary block">columna izquierda</div>
+                <div class="col-12 bg-secondary block">columna derecha</div>
+                <div class="col-6 bg-primary block">col 1</div>
+                <div class="col-6 bg-primary block">col 2</div>
+                <div class="col-6 bg-primary block">col 3</div>
+                <div class="col-6 bg-primary block">col 4</div>
+                <div class="col-6 bg-primary block">col 5</div>
+                <div class="col-6 bg-primary block">col 6</div>
+                <div class="col-6 bg-primary block">col 7</div>
+                <div class="col-6 bg-primary block">col 8</div>
+                <div class="col-6 bg-primary block">col 9</div>
+                <div class="col-6 bg-primary block">col 10</div>
+                <div class="col-12 bg-success block">footer</div>
+            </div>
+        </div>
+        <div class="d-none d-sm-block d-md-none">
+            <div class="row">
+                <div class="col-12 bg-success block">header</div>
+                <div class="col-12 bg-info block">banner interno</div>
+                <div class="col-6 bg-secondary block">columna izquierda</div>
+                <div class="col-6 bg-secondary block">columna derecha</div>
+                <div class="col-3 bg-primary block">col 1</div>
+                <div class="col-3 bg-primary block">col 2</div>
+                <div class="col-3 bg-primary block">col 3</div>
+                <div class="col-3 bg-primary block">col 4</div>
+                <div class="col-3 bg-primary block">col 5</div>
+                <div class="col-3 bg-primary block">col 6</div>
+                <div class="col-3 bg-primary block">col 7</div>
+                <div class="col-3 bg-primary block">col 8</div>
+                <div class="col-3 bg-primary block">col 9</div>
+                <div class="col-3 bg-primary block">col 10</div>
+                <div class="col-12 bg-success block">footer</div>
+            </div>
+        </div>
+        <div class="d-none d-md-block">
+            <div class="row">
+                <div class="col-12 bg-success block">header</div>
+                <div class="col-12 bg-info block">banner interno</div>
+                <div class="col-3 bg-secondary block">columna izquierda</div>
+                <div class="col-9 bg-secondary block">columna derecha</div>
+                <div class="col-2 bg-primary block">col 1</div>
+                <div class="col-2 bg-primary block">col 2</div>
+                <div class="col-2 bg-primary block">col 3</div>
+                <div class="col-2 bg-primary block">col 4</div>
+                <div class="col-2 bg-primary block">col 5</div>
+                <div class="col-2 bg-primary block">col 6</div>
+                <div class="col-2 bg-primary block">col 7</div>
+                <div class="col-2 bg-primary block">col 8</div>
+                <div class="col-2 bg-primary block">col 9</div>
+                <div class="col-2 bg-primary block">col 10</div>
+                <div class="col-12 bg-success block">footer</div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+

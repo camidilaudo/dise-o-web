@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 4 </title>
+</head>
+<body>
+    <script>
+        var numeros = [];
+        for (var i = 0; i < 5; i++) {
+            numeros.push(parseFloat(prompt("Ingrese el número " + (i + 1) + ":")));
+        }
+        var mayor = Math.max.apply(null, numeros);
+        var menor = Math.min.apply(null, numeros);
+
+        document.write("<ul>");
+        document.write("<li>Mayor: " + mayor + "</li>");
+        document.write("<li>Menor: " + menor + "</li>");
+        document.write("</ul>");
+    </script>
+</body>
+</html>

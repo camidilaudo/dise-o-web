@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego de Adivinanza</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+        }
+        input {
+            padding: 10px;
+            font-size: 16px;
+            width: 200px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+        p {
+            font-size: 18px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Juego de Adivinanza</h1>
+    <p>Adivina un número entre 0 y 10</p>
+    <input type="number" id="adivinanza" placeholder="Escribe tu número" />
+    <button onclick="verificarNumero()">Adivinar</button>
+    <p id="resultado"></p>
+
+    <script>
+        // Genera un número aleatorio entre 0 y 10
+        const numeroAleatorio = Math.floor(Math.random() * 11);
+
+        function verificarNumero() {
+            const input = document.getElementById("adivinanza");
+            const adivinanza = parseInt(input.value);
+            const resultado = document.getElementById("resultado");
+
+            // Validar que el usuario ingresó un número
+            if (isNaN(adivinanza)) {
+                resultado.textContent = "Por favor, ingresa un número válido.";
+                return;
+            }
+
+            // Comparar la adivinanza con el número aleatorio
+            if (adivinanza < numeroAleatorio) {
+                resultado.textContent = "El número es mayor. Intenta otra vez.";
+            } else if (adivinanza > numeroAleatorio) {
+                resultado.textContent = "El número es menor. Intenta otra vez.";
+            } else {
+                resultado.textContent = "¡Felicidades! Has adivinado el número.";
+                input.disabled = true; // Deshabilitar el input
+            }
+
+            // Limpiar el campo de entrada
+            input.value = "";
+        }
+    </script>
+</body>
+</html>
