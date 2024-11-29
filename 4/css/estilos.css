@@ -1,0 +1,60 @@
+#Ejercicio\ 1\ {
+    background-color: lightblue;
+    margin: 20px;
+    padding: 15px;
+}
+
+#Ejercicio\ 2\ {
+    background-image: url("../img/foto1.jpeg") ; background-repeat: no-repeat; background-position: center;
+}
+
+#Ejercicio\ 3\ {
+    border: red 2px solid; border-radius: 10px;
+}
+
+#Ejercicio\ 4\ {
+    border: solid 2px ; font-weight: bold; padding: 10px;
+}
+
+#Ejercicio\ 5\ {
+    div {
+        background: yellow; text-align: center;
+    }
+}
+
+#Ejercicio\ 6\ {
+    border: blueviolet 5px double; background: gold; margin: 40px;
+}
+
+#Ejercicio\ 7\ {
+    background-image: url("../img/foto2.jpeg");
+    background-position: right bottom;
+    background-repeat: no-repeat;
+}
+
+#Ejercicio\ 8\ {
+    background-image: url("../img/foto2.jpeg");
+    background-size: 50%;
+    background-repeat: repeat-y;
+}
+
+#Ejercicio\ 9\ {
+    background-color: hotpink;
+    background-image: url("../img/foto3.jpeg");
+    background-position: right top;
+    background-repeat: no-repeat;
+    .btn {
+    background-color: darkorange;
+    margin: 5px 0;
+    }
+}
+
+#Ejercicio\ 10\ {
+    width: 50%;
+    border: green 3px dotted;
+    padding: 25px;
+}
+
+
+
+
