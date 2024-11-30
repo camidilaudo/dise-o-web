@@ -30,6 +30,11 @@ h2 {
     box-sizing: border-box;
 }
 
+html {
+    scroll-padding-top: 60px;
+}
+
+
 .tarjeta, .ejercicio {
     font-family: 'Lato', sans-serif;
     color: #2b2d42;
@@ -164,14 +169,14 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 1rem 5%;
-    background-color: #5a4e7c; /* Fondo de color sólido */
-    color: #ffffff; /* Color del texto */
-    border-bottom: 2px solid #d4a5a5; /* Borde sutil */
+    background-color: #5a4e7c;
+    color: #ffffff;
+    border-bottom: 2px solid #d4a5a5;
     position: sticky;
     top: 0;
     z-index: 1000;
     transition: box-shadow 0.3s ease-in-out, background-color 0.3s ease;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     position: sticky;
 }
 
@@ -179,16 +184,16 @@ header {
 
 header.scrolled {
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
-    background-color: #3f3456; /* Fondo de color sólido más oscuro al hacer scroll */
+    background-color: #3f3456;
 }
 
 .logo h1 {
     font-family: 'Playfair Display', serif;
-    color: #ffffff; /* Color del texto del logo */
+    color: #ffffff;
     font-size: 2rem;
     font-weight: 700;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Sombra para el texto */
-    letter-spacing: 1px; /* Espaciado de letras */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    letter-spacing: 1px;
 }
 
 .nav-toggle {
@@ -213,7 +218,7 @@ header.scrolled {
 .bar{
     width: 30px;
     height: 3px;
-    background-color: #ffffff; /* Color de las barras del botón */
+    background-color: #ffffff;
     border-radius: 2px;
     transition: background-color 0.3s, transform 0.3s;
 }
